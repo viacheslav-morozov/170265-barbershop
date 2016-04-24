@@ -40,11 +40,17 @@
            <li><a href="#">Средства для ухода</a></li>
            <li><a href="#" class="current">Набор для путешествий "BAXTER OF CALIFORNIA"</a></li>
          </ul>
-         <div class="items">
-             <img src="http://placehold.it/150x100"  alt="item 1">
-             <img src="http://placehold.it/150x100" alt="item 2">
-             <img src="http://placehold.it/150x100" alt="item 3">
-             <img src="http://placehold.it/150x100"  alt="item 4">
+         <div class="items"><!-- Думаю тут не уместен класс items, наеврно лучше скажем photo_gallary -->
+              <!-- В подобных галлереях картинки большая и привьюшки, должны иметь контейнер родитель, это нужно для JS -->
+              <!-- Поэтому большую картинку заворачиваем в див и набор маленьких, по принципы, JS должен знать что, откуда брать, и куда это класть -->
+             <div class="big_img">
+              <img src="http://placehold.it/150x100"  alt="item 1">
+             </div>
+             <div class="preview_img">
+              <img src="http://placehold.it/150x100" alt="item 2">
+              <img src="http://placehold.it/150x100" alt="item 3">
+              <img src="http://placehold.it/150x100"  alt="item 4">
+            </div>
          </div>
          <div class="text-information">
              <div class="top">
